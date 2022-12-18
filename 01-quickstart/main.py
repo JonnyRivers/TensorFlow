@@ -36,6 +36,10 @@ model.compile(optimizer='adam',
 # train the model for 5 epochs
 model.fit(x_train, y_train, epochs=5)
 
+#model.save('C:\\Users\\jonny_\\Downloads\\model.tf')
+
+#model = tf.keras.models.load_model('C:\\Users\\jonny_\\Downloads\\model.tf')
+
 evaluation = model.evaluate(x_test,  y_test, verbose=2)
 print(f"test accuracy: {evaluation[1]*100.:2f}%")
 
